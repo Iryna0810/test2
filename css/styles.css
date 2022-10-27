@@ -1,15 +1,17 @@
 :root{
     --color-gray:rgba(157, 164, 189, 0.6);
+    --main-color: #8E4BD9;
+    --
 }
 *{
     margin: 0;
     padding: 0;
 }
 body {
-    front-family: "Open Sans", Sans-serif;
+    font-family: "Open Sans", Sans-serif;
 }
 .title {
-
+color: red;
 }
 .header {
 color: white;
@@ -68,7 +70,4 @@ ul {
         line-height: 15px;
         text-transform: uppercase;
         color: var(--color-gray);
-}
-.hero {
-    background-image: ;
 }
