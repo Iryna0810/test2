@@ -64,7 +64,7 @@
         <section>
             <h2>Services and prices</h2>
             <span>Spend your time with the best masters</span>
-            <ul>
+            <ul class="command-list">
                 <li>
                     <p> Men’s haircut <span>from 300 uah.</span> </p>
                 </li>
@@ -93,7 +93,7 @@
             <button type="button">Reserva en línea</button>
         </section>
         <section>
-            <ul>
+            <ul class="command-list">
                 <li>
                     <span>600</span><sup style="color: red">+</sup>
                     <p>Satisfied customers per day</p>
@@ -120,12 +120,12 @@
         <section>
             <span>For true enjoyers of the atmosphere</span>
             <h2>Our barbers</h2>
-            <ul>
+            <ul class="command-list">
                 <li>
                     <img src="./images/john_smith.jpg" alt="john_smith" width="370">
                     <h3>John Smith</h3>
                     <p>Extreme Barber</p>
-                    <ul>
+                    <ul class="command-list">
                         <li> <a href="#"> <img src="./images/instagram.svg" alt="instagram" width="10.28" height="10.28"></a></li>
                         <li> <a href="#"> <img src="./images/twitter.svg" alt="twitter" width="20" height="16.25"></a></li>
                         <li> <a href="#"> <img src="./images/facebook.svg" alt="facebook" width="10" height="20"></a></li>
@@ -136,7 +136,7 @@
                     <img src="./images/michele_doe.jpg" alt="michele_doe" width="370">
                     <h3>Michele Doe</h3>
                     <p>Extreme Barber</p>
-                    <ul>
+                    <ul class="command-list">
                         <li> <a href="#"> <img src="./images/instagram.svg" alt="instagram" width="10.28" height="10.28"></a></li>
                         <li> <a href="#"> <img src="./images/twitter.svg" alt="twitter" width="20" height="16.25"></a></li>
                         <li> <a href="#"> <img src="./images/facebook.svg" alt="facebook" width="10" height="20"></a></li>
@@ -147,7 +147,7 @@
                     <img src="./images/extreme_barber.jpg" alt="Alan Black" width="370">
                     <h3>Alan Black</h3>
                     <p>Extreme Barber</p>
-                    <ul>
+                    <ul class="command-list">
                         <li> <a href="#"> <img src="./images/instagram.svg" alt="instagram" width="10.28" height="10.28"></a></li>
                         <li> <a href="#"> <img src="./images/twitter.svg" alt="twitter" width="20" height="16.25"></a></li>
                         <li> <a href="#"> <img src="./images/facebook.svg" alt="facebook" width="10" height="20"></a></li>
@@ -156,28 +156,28 @@
                 </li>
             </ul>
         </section>
-        <section>
-            <ul>
-                <p>Latin, "barba" means "beard"</p>
-                <h2 hidden>portfolio</h2>
+        <!-- <section>
+            <p>Latin, "barba" means "beard"</p>
+            <h2 hidden>portfolio</h2>
+            <ul class="command-list">
                 <li>
-                    <img src="./images/beard1.jpg" alt="beard1" width="270" height="360"
+                    <img src="./images/beard1.jpg" alt="beard1" width="270" height="360">
                 </li>
                 <li>
-                    <img src="./images/beard2.jpg" alt="beard2" width="270" height="360"
+                    <img src="./images/beard2.jpg" alt="beard2" width="270" height="360">
                 </li>
                 <li>
-                    <img src="./images/beard3.jpg" alt="beard3" width="270" height="360"
+                    <img src="./images/beard3.jpg" alt="beard3" width="270" height="360">
                 </li>
                 <li>
-                    <img src="./images/beard4.jpg" alt="beard4" width="270" height="360"
+                    <img src="./images/beard4.jpg" alt="beard4" width="270" height="360">
                 </li>
             </ul>
-        </section>
+        </section> -->
         <section>
             <h2>Contacts</h2>
             <address>
-                <ul>
+                <ul class="command-list">
                     <li> <a href="#" target="_blank" rel="noopener noreferrer">st. Vasilkovaya, 7A
                     Kiev, 08132</a>
                     </li>
@@ -192,14 +192,44 @@
             <span>Working hours</span>
             <p>Every day from 9:00 to 22:00</p>
         </section>
-
-
     </main>
     <footer>
+            <!-- <form action="submit" class="js-register-form" autocomplete="off"> -->
+               <form class="js-register-form" >
+                <div role="group" class="command-list">
+                    <label>
+                        Email
+                        <input type="email" name="email" autocomplete="email"/>
+                    </label>
+                    <label>
+                        Password
+                        <input type="password" name="password" autocomplete="current-password" />
+                    </label>
+                </div>
+                <div role="group" class="command-list">
+                    <label class="input">
+
+                        <input type="radio" name="subscription" value="free"/>
+                        free
+                    </label>
+                    <label class="input">
+                        <input type="radio" name="subscription" value="basic" />
+                        basic
+                    </label>
+                    <label class="input">
+                        <input type="radio" name="subscription" value="pro" />
+                        pro
+                    </label>
+
+                </div>
+                <button type="submit">Submit</button>
+                </form>
         <img src="./images/vector.svg" alt="vector">
         <p>Copyright 2020</p>
         <a href="#">Instagram</a>
         <a href="#">Youtube</a>
+
     </footer>
+    <script src="./event.js"></script>
 </body>
 </html>
