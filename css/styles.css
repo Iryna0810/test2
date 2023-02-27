@@ -83,6 +83,19 @@ ul {
         text-transform: uppercase;
         color: var(--color-gray);
 }
+.js-contact-form {
+display: flex;
+/* flex-direction: column ; */
+justify-content: center;
+margin-top: 60px;
+border: #8E4BD9 2px;
+
+}
+.js-username-output{
+    margin-left: 10px;
+    margin-right: 10px;
+  
+}
 .command-list {
     display: flex;
     justify-content: space-between;
