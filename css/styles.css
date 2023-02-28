@@ -86,7 +86,7 @@ ul {
 .js-contact-form {
 display: flex;
 /* flex-direction: column ; */
-justify-content: center;
+justify-content: space-between;
 margin-top: 60px;
 border: #8E4BD9 2px;
 

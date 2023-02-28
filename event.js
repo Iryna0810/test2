@@ -119,3 +119,28 @@ formInputEl.addEventListener('blur', (event) => {
     event.target.style.outline = 'none'
 })
 
+formInputEl.addEventListener('input', (event) => {
+    console.log(event.target.value);
+    userNameOutputEl.textContent = event.target.value;
+})
+
+formCheckboxEl.addEventListener('change', (event) => {
+    console.log(event.target);
+    if (event.target.checked && formInputEl.value !== '') {
+        formSubmitBtnEl.disabled = false;
+        return;
+    }
+    formSubmitBtnEl.disabled = true;
+});
+
+formEl.addEventListener('submit', (event) => {
+    event.preventDefault();
+    console.log(formInputEl.value);
+    event.target.reset();
+    userNameOutputEl.textContent = '';
+    formSubmitBtnEl.disabled = true;
+    
+})
+
+
+
