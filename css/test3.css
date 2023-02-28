@@ -1,0 +1,33 @@
+
+input {
+    margin: 20px;
+    max-width: 200px;
+    max-height: 50px;
+}
+
+body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+}
+button {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    max-width: 150px;
+    margin: 0 auto;
+
+}

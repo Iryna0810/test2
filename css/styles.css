@@ -73,6 +73,10 @@ ul {
         line-height: 16px;
         letter-spacing: 0.09em;
         text-transform: uppercase;
+        max-width: 150px;
+        /* text-align: center; */
+        margin: 0 auto;
+
 }
 .uptitle {
     font-family: 'Open Sans';
@@ -85,17 +89,18 @@ ul {
 }
 .js-contact-form {
 display: flex;
-/* flex-direction: column ; */
-justify-content: space-between;
+flex-direction: column;
+justify-content: center;
+text-align: center;
 margin-top: 60px;
-border: #8E4BD9 2px;
+padding: 20px;
+max-width: 350px;
+outline: #FF6C00 solid 4px;
 
 }
 .js-username-output{
-    margin-left: 10px;
-    margin-right: 10px;
-  
-}
+    margin: 20px;
+  }
 .command-list {
     display: flex;
     justify-content: space-between;
@@ -104,7 +109,7 @@ input {
     padding: 8px;
     font-family: inherit;
     display: inline-flex;
-    margin-left: 12px;
+    margin: 12px;
 }
 
 label {

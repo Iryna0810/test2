@@ -105,19 +105,18 @@
 // }
 
 const formEl = document.querySelector('.js-contact-form');
+console.log(formEl);
 const formInputEl = document.querySelector('.js-username-input');
 const formCheckboxEl = document.querySelector('.js-policy-checkbox');
 const userNameOutputEl = document.querySelector('.js-username-output');
 const formSubmitBtnEl = document.querySelector('.js-contact-form-submit');
 
-formInputEl.addEventListener('focus', (event) => {
-    console.log(event);
-    event.target.style.outline = '4px solid teal';
-})
+formInputEl.addEventListener('focus', (event) =>
+{ event.target.style.outline = '4px solid teal' });
 
-formInputEl.addEventListener('blur', (event) => {
+formInputEl.addEventListener('blur', (event) =>
     event.target.style.outline = 'none'
-})
+)
 
 formInputEl.addEventListener('input', (event) => {
     console.log(event.target.value);
@@ -125,7 +124,7 @@ formInputEl.addEventListener('input', (event) => {
 })
 
 formCheckboxEl.addEventListener('change', (event) => {
-    console.log(event.target);
+    console.log(event);
     if (event.target.checked && formInputEl.value !== '') {
         formSubmitBtnEl.disabled = false;
         return;
@@ -141,6 +140,11 @@ formEl.addEventListener('submit', (event) => {
     formSubmitBtnEl.disabled = true;
     
 })
+
+document.addEventListener("keyup", event => {
+  console.log("key: ", event.key);
+  console.log("code: ", event.code);
+});
 
 
 
